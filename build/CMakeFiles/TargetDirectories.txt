@@ -1,8 +1,0 @@
-/root/dz1_multithread/build/CMakeFiles/rebuild_cache.dir
-/root/dz1_multithread/build/CMakeFiles/edit_cache.dir
-/root/dz1_multithread/build/exe/CMakeFiles/rebuild_cache.dir
-/root/dz1_multithread/build/exe/CMakeFiles/edit_cache.dir
-/root/dz1_multithread/build/exe/CMakeFiles/main.dir
-/root/dz1_multithread/build/tests/unit/CMakeFiles/rebuild_cache.dir
-/root/dz1_multithread/build/tests/unit/CMakeFiles/edit_cache.dir
-/root/dz1_multithread/build/tests/unit/CMakeFiles/test_realisation.dir
