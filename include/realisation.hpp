@@ -2,7 +2,8 @@
 
 template<typename fIt>
 int distance_(fIt begin, fIt end) {
-    int result = 0;
+
+    int result = 1;
     while (begin != end) {
         begin++;
         result++;
@@ -89,11 +90,12 @@ OutIt merge_(InIt1 begin1, InIt1 end1,
             return std::copy(begin1, end1, d_begin);
         }
         if (*begin2 < *begin1) {
-            *d_begin = *begin2;
             ++begin2;
+            *d_begin = *begin2;
         } else {
-            *d_begin = *begin1;
             ++begin1;
+            *d_begin = *begin1;
+            
         }
         ++d_begin;
     }
