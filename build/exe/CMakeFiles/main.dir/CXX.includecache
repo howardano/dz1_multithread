@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/realisation.hpp
+iostream
+-
+
+/root/dz1_multithread/exe/main.cpp
+realisation.hpp
+/root/dz1_multithread/exe/realisation.hpp
+vector
+-
+algorithm
+-
+

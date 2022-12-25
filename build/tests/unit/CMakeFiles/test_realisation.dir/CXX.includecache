@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/realisation.hpp
+iostream
+-
+
+/root/dz1_multithread/tests/unit/tests.cpp
+gtest/gtest.h
+-
+vector
+-
+realisation.hpp
+/root/dz1_multithread/tests/unit/realisation.hpp
+
