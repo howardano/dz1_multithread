@@ -83,5 +83,27 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(result[0], b"2")
         self.assertEqual(result[1], b"3")
 
+    def test_merge_(self):
+        program_path = "../../build/main"
+
+        p = Popen([program_path], stdout=PIPE, stdin=PIPE)
+
+        p.stdin.write(b"2\n")
+        p.stdin.write(b"1\n")
+        p.stdin.write(b"2\n")
+        p.stdin.write(b"5\n")
+        p.stdin.write(b"2\n")
+        p.stdin.write(b"3\n")
+        p.stdin.write(b"4\n")
+
+        p.stdin.flush()
+
+        result = p.stdout.readline().strip().split()
+        self.assertEqual(result[0], b"1")
+        self.assertEqual(result[1], b"2")
+        self.assertEqual(result[2], b"3")
+        self.assertEqual(result[3], b"4")
+
+
 if __name__ == "__main__":
     unittest.main()
