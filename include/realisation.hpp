@@ -89,11 +89,11 @@ OutIt merge_(InIt1 begin1, InIt1 end1,
             return std::copy(begin1, end1, d_begin);
         }
         if (*begin2 < *begin1) {
-            ++begin2;
             *d_begin = *begin2;
+            ++begin2;
         } else {
-            ++begin1;
             *d_begin = *begin1;
+            ++begin1;
             
         }
         ++d_begin;
