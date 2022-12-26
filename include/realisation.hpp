@@ -2,13 +2,12 @@
 
 template<typename fIt>
 int distance_(fIt begin, fIt end) {
-
-    int result = 1;
+    int result = 0;
     while (begin != end) {
         begin++;
         result++;
     }
-
+    
     return result;
 }
 

@@ -2,6 +2,11 @@
 #include <vector>
 #include "realisation.hpp"
 
+TEST(MainTest, test_distance) {
+    std::vector<int> a = {1, 2};
+    EXPECT_EQ(distance_(a.begin(), a.end()), a.size());
+}
+
 TEST(MainTest, test_advance) {
     std::vector<int> a = {1, 2, 3, 4, 5};
     EXPECT_EQ(advance_(a.begin(), 1), a.begin()+1);
